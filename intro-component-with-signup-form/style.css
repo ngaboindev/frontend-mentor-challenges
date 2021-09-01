@@ -147,6 +147,10 @@ small a {
   text-decoration: none;
   font-weight: 600;
 }
+.attribution {
+  margin-top: 20px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   body {
