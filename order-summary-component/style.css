@@ -45,11 +45,13 @@ body {
   align-items: center;
   border-radius: 13px;
   padding: 10px 25px;
+  flex-wrap: wrap;
 }
 
 .icon-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .icon-wrapper p,
 h4 {
@@ -108,6 +110,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  button {
+    padding: 10px 30px;
+  }
   body {
     background-image: url("./images/pattern-background-mobile.svg");
   }
