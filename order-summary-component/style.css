@@ -9,6 +9,7 @@ body {
   background-color: hsl(225, 100%, 94%);
   background-image: url("./images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
 
 .card {
   background-color: #fff;
-  width: 465px;
+  width: 430px;
   border-radius: 13px;
   text-align: center;
   box-shadow: 5px 10px 8px 10px hsl(225, 100%, 92%);
@@ -34,7 +35,7 @@ body {
 }
 
 .card-body {
-  padding: 30px 55px;
+  padding: 20px 50px;
 }
 
 .card-gray {
@@ -83,7 +84,8 @@ button:focus {
 }
 
 .attribution {
-  margin-top: 20px;
+  font-size: 13px;
+  margin: 0;
   text-align: center;
 }
 
@@ -106,7 +108,7 @@ p,
 
 h1,
 p {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 @media screen and (max-width: 768px) {
