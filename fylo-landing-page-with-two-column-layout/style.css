@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* ### Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* ### Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--very-dark-blue);
+}
+
+/* typography */
+h1,
+h2,
+h3,
+nav a,
+.section-call-to-action {
+  font-family: "Raleway", sans-serif;
+  color: var(--very-dark-blue);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* layouts */
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex,
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex > div,
+.nav-flex > div {
+  flex: 1;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.header-intro-img img,
+.section-intro-img img {
+  max-width: 100%;
+}
+
+.header-btn-container {
+  margin-left: 20px;
+}
+
+nav {
+  padding: 45px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 45px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid var(--very-dark-blue);
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.form-control::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid hsl(224, 93%, 58%);
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  padding: 15px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  background-color: var(--bright-blue);
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-intro {
+  background-color: hsl(240, 75%, 98%);
+  margin-top: 100px;
+  position: relative;
+}
+
+.section-intro::before {
+  content: "";
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.intro-link {
+  color: var(--moderate-cyan);
+}
+
+.card {
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  margin-top: 40px;
+  width: 80%;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+}
+
+.card-flex p {
+  margin: 0;
+}
+
+.t-bold {
+  font-weight: 700;
+}
+
+.card-flex img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.section-call-to-action {
+  background-color: var(--desaturated-blue);
+  color: #fff;
+}
+
+.section-call-to-action h3 {
+  color: #fff;
+}
+
+.newsletter-container div {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  padding: 75px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding-bottom: 15px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  margin-right: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  text-align: center;
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  nav {
+    padding: 20px;
+  }
+  nav ul li {
+    margin-left: 15px;
+  }
+  .nav-brand img {
+    width: 55%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+  .mobile-flex-reverse {
+    flex-direction: column-reverse;
+  }
+  header {
+    margin-top: 50px;
+  }
+  .section,
+  header {
+    text-align: center;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-group {
+    align-items: initial;
+    padding: 0 20px;
+  }
+  .header-btn-container {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .header-btn-container button {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .newsletter-container {
+    width: 100%;
+  }
+  .flex-mobile-row {
+    flex-direction: row;
+  }
+}
